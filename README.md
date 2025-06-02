@@ -11,16 +11,16 @@ A web application to visualize VLAN routes through network switches and uplinks.
 
 ## Tech Stack
 
-- **Frontend**: React (Vite) + Cytoscape.js
-- **Backend**: ASP.NET Core Web API (.NET 8)
-- **Database**: PostgreSQL or SQL Server via Entity Framework Core
+- **Frontend**: React (Vite) + Cytoscape.js + Tailwind CSS
+- **Backend**: Node.js + Express.js
+- **Database**: SQLite (development) with potential for PostgreSQL/MySQL
 
 ## Setup
 
 ### Frontend
 
 1. Clone the repository.
-2. Navigate to the frontend directory:
+2. Navigate to the project directory:
    ```bash
    cd vlan-route-visualizer
    ```
@@ -41,19 +41,23 @@ A web application to visualize VLAN routes through network switches and uplinks.
    ```
 2. Install dependencies:
    ```bash
-   dotnet restore
+   npm install
    ```
 3. Run the application:
    ```bash
-   dotnet run
+   npm start
    ```
 
 ## Usage
 
-- Open `http://localhost:3000` in your browser.
+- Open `http://localhost:5174` in your browser (or the port shown in terminal).
 - Log in (if authentication is enabled).
 - Manage switches and VLANs.
 - Visualize VLAN routes by selecting a VLAN from the dropdown.
+
+## API Documentation
+
+See `API_DOCUMENTATION.md` for detailed API endpoints and usage examples.
 
 ## License
 
